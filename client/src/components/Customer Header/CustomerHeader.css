@@ -1,0 +1,34 @@
+.homenavbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+  }
+
+  .homenav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .homenav-links:hover {
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    color: #ff7200;
+  }
+
+  .brand{
+    padding-left: 40px;
+  }
+
+  .navItem{
+    padding-right: 20px;
+  }
+
+  .navbar{
+    height: 50px;
+  }
