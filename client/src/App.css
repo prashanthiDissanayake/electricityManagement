@@ -1,0 +1,8 @@
+body {
+  background-color: #1f1f38;
+}
+
+form.add-form.p-5.text-center {
+  background: #fff;
+  border-radius: 20px;
+}
