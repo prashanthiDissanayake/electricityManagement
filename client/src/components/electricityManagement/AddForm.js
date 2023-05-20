@@ -7,6 +7,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import axios from "axios";
 import swal from "sweetalert";
+import CustomerHeader from "../Customer Header/CustomerHeader";
 
 export default function AddElectricityType() {
   const [validated, setValidated] = useState(false);
@@ -73,7 +74,9 @@ export default function AddElectricityType() {
   };
 
   return (
-    <div className="container">
+    <div>
+      <CustomerHeader/>
+      <div className="container">
       <div className="text-center fs-4 fw-bold text-white">
         Add A New Electricity Type
       </div>
@@ -144,6 +147,7 @@ export default function AddElectricityType() {
           ADD ELECTRICITY TYPE
         </Button>
       </Form>
+    </div>
     </div>
   );
 }
