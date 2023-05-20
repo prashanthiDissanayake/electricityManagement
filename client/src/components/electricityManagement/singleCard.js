@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import axios from "axios";
 import swal from "sweetalert";
 import electroIMG from "../../Assets/images/elec.png";
-
+import '../../App.css'
 export default function SingleCard() {
   const [electricityList, setElectricityList] = useState([]);
 
@@ -27,14 +27,14 @@ export default function SingleCard() {
         <div className="row">
           {electricityList?.map((item, index) => {
             return (
-              <div className="col-md-4">
+              <div className="col-md-4 mb-5">
                 <Card>
                   <Card.Img variant="top" src={electroIMG} />
                   <Card.Body>
                     <Card.Title>{item.electricityType}</Card.Title>
                     <Card.Text> {item.description}</Card.Text>
                     <Card.Text>PRICE: LKR. {item.price}/=</Card.Text>
-                    <Button variant="primary">ADD NOW</Button>
+                    <a href="/connectionForm" type="button" className="btn-primary-btn" variant="primary">ADD NOW</a>
                   </Card.Body>
                 </Card>
               </div>
